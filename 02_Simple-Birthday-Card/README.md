@@ -1,3 +1,3 @@
-This folder contains `Assignment 2: Simple Birthday Cake`:
+This folder contains `Assignment 2: Simple Birthday Card`:
 
 ![result](./result/result.png)
