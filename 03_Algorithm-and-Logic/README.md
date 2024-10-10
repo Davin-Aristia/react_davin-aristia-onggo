@@ -1,1 +1,1 @@
-This folder contains `Assignment 3: Algorithm and Logic`:
+This folder contains `Assignment 3: Algorithm and Logic`
