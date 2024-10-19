@@ -1,0 +1,8 @@
+#edit {
+    margin-right: 10px;
+}
+
+.modal-body {
+    max-height: 60vh;
+    overflow-y: auto;
+}
