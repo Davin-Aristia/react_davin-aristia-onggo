@@ -32,6 +32,10 @@ function App() {
       }))
       setRates(tempRates)
     })
+    .catch((error) => {
+      console.error("Error fetching currencies:", error);
+      setRates([]);
+    });
   }, [])
 
   return (
@@ -47,8 +51,8 @@ function App() {
         </thead>
         <tbody>
           {
-            rates.map((rate, index) => (
-              <tr className="fs-4" key={index}>
+            rates.map((rate) => (
+              <tr className="fs-4" key={rate.currency}>
                 <td>{rate.currency}</td>
                 <td>{rate.buy}</td>
                 <td>{rate.rate}</td>
@@ -57,7 +61,7 @@ function App() {
             ))
           }
           <tr className="fs-8">
-            <td colspan="4">
+            <td colSpan="4">
               Rates are based from 1 USD
               <br/>
               This application uses API from https://currencyfreaks.com.
